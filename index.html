@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iPhone Goiás — Mozarlândia | M² Desenvolvimento Web</title>
+  <meta name="description" content="Loja iPhone Goiás — catálogo de iPhones, iPads e iPods. Site demo criado por M² Desenvolvimento Web." />
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <!-- Substitua o src por logo da loja (licenciado) -->
+      <img src="https://via.placeholder.com/80x80?text=iG" alt="Logo iPhone Goiás"/>
+      <div>
+        <h1>iPhone Goiás — Mozarlândia</h1>
+        <div style="color:var(--sub);font-size:13px">Desenvolvido por M² Desenvolvimento Web</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <a class="cta" href="#contato">Peça um site</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Loja iPhone Goiás — Produtos oficiais e seminovos</h2>
+        <p>Sites profissionais para lojas de celular: catálogo online, contato direto via WhatsApp, e páginas de promoções. Pacotes para novos clientes a partir de <strong>R$200 — R$250</strong>.</p>
+        <div class="actions">
+          <a class="btn primary" href="#produtos">Ver produtos</a>
+          <a class="btn" href="#contato">Peça um orçamento</a>
+        </div>
+
+        <ul class="cert" aria-label="Certificações e garantias">
+          <li><span class="dot"></span><div><strong>Design profissional</strong><div class="meta">Layout responsivo, rápido e otimizado</div></div></li>
+          <li><span class="dot"></span><div><strong>Integração com WhatsApp</strong><div class="meta">Contato direto do produto para seu atendimento</div></div></li>
+          <li><span class="dot"></span><div><strong>SEO básico incluso</strong><div class="meta">Para aparecer nas buscas locais</div></div></li>
+        </ul>
+      </div>
+
+      <aside style="display:flex;flex-direction:column;gap:14px;">
+        <div class="hero-card">
+          <h3 style="margin-top:0">Ofertas em destaque</h3>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="title">iPhone 14 — 128GB</div>
+                <div class="meta">Semi-novo, garantia 3 meses</div>
+              </div>
+              <div style="text-align:right">
+                <div class="price">R$ 3.999</div>
+                <div class="old">R$ 4.299</div>
+              </div>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="title">iPad (10ª gen) — 64GB</div>
+                <div class="meta">Novo, lacrado</div>
+              </div>
+              <div style="text-align:right">
+                <div class="price">R$ 2.499</div>
+              </div>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="title">iPod touch — 32GB</div>
+                <div class="meta">Usado em ótimo estado</div>
+              </div>
+              <div style="text-align:right">
+                <div class="price">R$ 999</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h4 style="margin:0 0 8px">Parceiro</h4>
+          <p class="meta" style="margin:0 0 8px">Trabalhamos com marcas conhecidas. Substitua o logo abaixo por uma imagem licenciada.</p>
+          <!-- Atenção: não inclua logos não licenciados sem permissão. -->
+          <img src="https://via.placeholder.com/320x80?text=NIKE+Logo+Placeholder" alt="Logo Parceiro (placeholder)" style="width:100%;height:auto;border-radius:8px;object-fit:contain"/>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+      <h2 style="margin:8px 0 14px">Produtos</h2>
+      <div class="grid">
+
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="thumb"><img src="./assets/iphone 14 preto.webp" alt="iPhone 14 128GB"></div>
+          <div>
+            <div class="title">iPhone 14 — 128GB</div>
+            <div class="meta">Estado: Semi-novo • Cor: Preto</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div>
+              <div class="price">R$ 3.999</div>
+              <div class="old">R$ 4.299</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a class="btn" href="https://wa.me/5582999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20iPhone%2014" target="_blank" rel="noopener noreferrer">Comprar</a>
+              <a class="btn" href="#">Ver detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="thumb"><img src="./assets/ipad 10 geracao.png" alt="iPad 10"></div>
+          <div>
+            <div class="title">iPad 10ª geração — 64GB</div>
+            <div class="meta">Novo • Lacrado</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div>
+              <div class="price">R$ 2.499</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a class="btn" href="https://wa.me/5582999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20iPad%2010" target="_blank" rel="noopener noreferrer">Comprar</a>
+              <a class="btn" href="#">Ver detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="thumb"><img src="./assets/ipod touch.png" alt="iPod touch"></div>
+          <div>
+            <div class="title">iPod touch — 32GB</div>
+            <div class="meta">Usado • Ótimo estado</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div>
+              <div class="price">R$ 999</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a class="btn" href="https://wa.me/5582999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20iPod%20touch" target="_blank" rel="noopener noreferrer">Comprar</a>
+              <a class="btn" href="#">Ver detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 (exemplo adicional) -->
+        <article class="card">
+          <div class="thumb"><img src="./assets/IPHONE SE.png" alt="iPhone SE"></div>
+          <div>
+            <div class="title">iPhone SE — 64GB</div>
+            <div class="meta">Novo • Lacrado</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div>
+              <div class="price">R$ 1.899</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a class="btn" href="https://wa.me/5582999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20iPhone%20SE" target="_blank" rel="noopener noreferrer">Comprar</a>
+              <a class="btn" href="#">Ver detalhes</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" style="margin-top:28px">
+      <h2>Serviços</h2>
+      <p class="meta">Além dos produtos, oferecemos:</p>
+      <ul style="margin-top:8px;color:var(--sub)">
+        <li>Criação de site para loja (página inicial + catálogos + contato via WhatsApp)</li>
+        <li>Integração com redes sociais e banners de promoção</li>
+        <li>Otimização para buscas locais (Google Meu Negócio)</li>
+        <li>Suporte técnico por 30 dias</li>
+      </ul>
+    </section>
+
+    <section id="contato" style="margin-top:28px">
+      <h2>Peça um orçamento</h2>
+      <p class="meta">Pacotes para novos clientes: <strong>R$200 — R$250</strong>. Podemos montar um site simples para divulgação, com até 6 produtos, integração com WhatsApp e layout responsivo.</p>
+
+      <form style="display:grid;grid-template-columns:1fr 220px;gap:12px;margin-top:12px;max-width:760px">
+        <input type="text" name="nome" placeholder="Seu nome" required style="padding:12px;border-radius:10px;border:1px solid var(--line)" />
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (ex: 55 82 99999-9999)" required style="padding:12px;border-radius:10px;border:1px solid var(--line)" />
+        <input type="email" name="email" placeholder="E-mail (opcional)" style="padding:12px;border-radius:10px;border:1px solid var(--line)" />
+        <button type="submit" class="btn primary" style="border-radius:10px;padding:12px;">Enviar pedido</button>
+      </form>
+
+      <p class="meta" style="margin-top:10px">Ou abra o WhatsApp agora: <a href="https://wa.me/5582999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20site%20pelo%20pacote%20de%20R%24200%20-%20R%24250" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a></p>
+    </section>
+
+    <footer>
+      <div>M² Desenvolvimento Web — contato: <a href="mailto:contato@mx2exemplo.com">contato@mx2exemplo.com</a> • Mozarlândia — GO</div>
+      <div style="margin-top:8px;font-size:13px">Este é um site demonstrativo. Substitua imagens e logos por versões licenciadas antes de publicar.</div>
+    </footer>
+  </main>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>

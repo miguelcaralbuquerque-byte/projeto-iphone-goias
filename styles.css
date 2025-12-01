@@ -1,0 +1,59 @@
+/* Paleta inspirada na Apple: branco, cinza claro, cinza escuro, preto, azul suave */
+:root{
+  --bg:#FFFFFF;
+  --muted:#F5F5F7;
+  --card:#FFFFFF;
+  --line:#E6E6EA;
+  --text:#1D1D1F;
+  --sub:#6E6E73;
+  --accent:#0071E3; /* azul Apple-like */
+  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+  --radius:14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--muted),#fff 40%);color:var(--text);}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:transparent;position:sticky;top:0;backdrop-filter:blur(6px);}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px;border-radius:8px;object-fit:cover}
+.brand h1{font-size:18px;margin:0}
+nav{display:flex;gap:14px;align-items:center}
+nav a{color:var(--sub);text-decoration:none;font-weight:600}
+.cta{background:var(--accent);color:white;padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+.container{max-width:1180px;margin:28px auto;padding:0 18px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.6),#fff);border-radius:18px;padding:28px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.hero h2{margin:0 0 8px;font-size:28px}
+.hero p{margin:0 0 18px;color:var(--sub)}
+.hero .actions{display:flex;gap:12px}
+.btn{padding:10px 16px;border-radius:12px;border:1px solid var(--line);background:transparent;text-decoration:none;color:var(--text);font-weight:700}
+.btn.primary{background:var(--accent);color:#fff;border:none}
+
+/* Product grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border-radius:14px;padding:14px;border:1px solid var(--line);box-shadow:0 6px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:10px}
+.thumb{height:160px;border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#f8f8fa,#fff);display:flex;align-items:center;justify-content:center}
+.thumb img{max-width:90%;max-height:90%;object-fit:contain}
+.title{font-weight:700}
+.meta{color:var(--sub);font-size:13px}
+.price{font-weight:800;color:var(--text)}
+.old{color:var(--sub);text-decoration:line-through;font-size:13px}
+.tag{padding:6px 10px;background:rgba(0,0,0,0.06);border-radius:999px;font-weight:700;font-size:12px}
+
+/* Certified list */
+.cert{display:flex;flex-direction:column;gap:8px;background:transparent;margin-top:18px}
+.cert li{display:flex;gap:10px;align-items:flex-start}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px}
+
+footer{margin:40px 0 80px;color:var(--sub);text-align:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  header{padding:14px}
+  .brand img{width:36px;height:36px}
+}
